@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    
+    <title>Todo list</title>
+
+</head>
+<body>
+    <!-- Image and text -->
+<nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">
+      TODO List
+    </a>
+  </nav>
+<div class="container my-4">
+  
+    <div class="form-group">
+      <label for="exampleInputEmail1">Item</label>
+      <input type="email" class="form-control" id="Name" aria-describedby="emailHelp" >
+      <small id="emailHelp" class="form-text text-muted">Tell us what you want to do</small>
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlTextarea1">Description</label>
+        <textarea class="form-control" id="Description" rows="3"></textarea>
+      </div>
+    <div class="form-group form-check">
+      <input type="checkbox" class="form-check-input" id="Important" value = "Yes">
+      <label class="form-check-label" for="exampleCheck1">Important</label>
+    </div>
+    <button type="submit" id = "add" class="btn btn-primary" >Add to List</button>
+    <button class="btn btn-primary" onclick="clearStr()">Clear List</button>
+  
+  <div id="items" class="my-4">
+    <h2>Your Items</h2>
+    <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Sno.</th>
+            <th scope="col">Item title</th>
+            <th scope="col">Item Description</th>
+            <th scope="col">Is Important</th>
+            <th scope="col">Action</th>
+            
+          </tr>
+        </thead>
+        <tbody id = "tbody">
+        </tbody>
+      </table>
+      
+      
+</div>    
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
